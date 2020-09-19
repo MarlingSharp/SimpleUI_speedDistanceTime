@@ -7,16 +7,19 @@ https://realpython.com/python-gui-tkinter/#building-a-temperature-converter-exam
 # Import the library
 import tkinter as tk
 
+# Import our custom components
 from Title import Title
 from SpeedForm import SpeedForm
 
 # Create our application
 root = tk.Tk()
 
+# Create our custom components
 main = Title(root)
-main.pack(fill="both", expand=True)
-
 form = SpeedForm(root)
+
+# Add our components to the root
+main.pack(fill="both", expand=True)
 form.pack()
 
 """ 
